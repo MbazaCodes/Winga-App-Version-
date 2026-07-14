@@ -5,6 +5,7 @@ A production-ready monorepo scaffold for Winga App V3, based on the architecture
 ## What is included
 - Flutter mobile app with onboarding, auth, booking, profile, and payments screens
 - Next.js admin console with dashboard and request management
+- Customer and Winga Progressive Web App for mobile-like access without APKs
 - Supabase client integration and copied migration assets from the original repository
 - CI workflow for Flutter and Next.js
 
@@ -12,6 +13,7 @@ A production-ready monorepo scaffold for Winga App V3, based on the architecture
 ```text
 mobile/          Flutter app
 admin/           Next.js admin app
+pwa/             Next.js customer/Winga PWA
 supabase/        Supabase SQL migrations and shared backend assets
 docs/            migration summary
 .github/         CI workflow
@@ -32,6 +34,13 @@ npm install
 npm run dev
 ```
 
+### PWA
+```bash
+cd pwa
+npm install
+npm run dev
+```
+
 ### Supabase
 1. Create a Supabase project.
 2. Apply the SQL files in the supabase/migrations folder.
@@ -42,4 +51,4 @@ npm run dev
    - NEXT_PUBLIC_SUPABASE_ANON_KEY
 
 ## Notes
-This scaffold mirrors the original Winga App’s Supabase-backed patterns and architecture, while preparing a cleaner V3 structure for production work.
+This scaffold includes a mobile-like PWA for customers and Winga users so they can install the experience on iPhone, Android, and desktop without downloading an APK.

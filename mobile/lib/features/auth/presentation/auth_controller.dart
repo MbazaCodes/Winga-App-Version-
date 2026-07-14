@@ -2,14 +2,13 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import '../../../core/network/supabase_client.dart';
 import '../../../core/storage/storage_service.dart';
 
-final authControllerProvider = StateNotifierProvider<AuthController, bool>((ref) {
-  return AuthController(StorageService());
-});
+final authControllerProvider = NotifierProvider<AuthController, bool>(AuthController.new);
 
-class AuthController extends StateNotifier<bool> {
-  AuthController(this.storageService) : super(false);
+class AuthController extends Notifier<bool> {
+  late final StorageService storageService = StorageService();
 
-  final StorageService storageService;
+  @override
+  bool build() => false;
 
   Future<void> signIn({required String phoneOrEmail, required String password}) async {
     state = true;

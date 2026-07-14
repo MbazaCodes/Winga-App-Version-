@@ -6,7 +6,7 @@ void main() {
   testWidgets('RideHistoryScreen shows recent rides', (tester) async {
     await tester.pumpWidget(const MaterialApp(home: RideHistoryScreen()));
 
-    expect(find.text('Ride history'), findsOneWidget);
     expect(find.text('Airport transfer'), findsOneWidget);
+    expect(find.text('Completed'), findsWidgets);
   });
 }

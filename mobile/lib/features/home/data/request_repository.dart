@@ -1,4 +1,4 @@
-import '../../core/network/supabase_service.dart';
+import '../../../core/network/supabase_service.dart';
 
 class RequestRepository {
   RequestRepository({SupabaseService? service}) : _service = service ?? SupabaseService();

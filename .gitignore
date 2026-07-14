@@ -15,6 +15,10 @@ admin/.next/
 admin/node_modules/
 admin/.env.local
 admin/.env
+pwa/node_modules/
+pwa/.next/
+pwa/.env.local
+pwa/.env
 
 # Logs
 *.log
