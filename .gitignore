@@ -20,5 +20,9 @@ pwa/.next/
 pwa/.env.local
 pwa/.env
 
+# Android Studio / IntelliJ
+.idea/
+*.iml
+
 # Logs
 *.log
