@@ -1,0 +1,24 @@
+# OS files
+.DS_Store
+Thumbs.db
+
+# Flutter
+mobile/.dart_tool/
+mobile/build/
+mobile/.flutter-plugins
+mobile/.flutter-plugins-dependencies
+mobile/.packages
+mobile/.idea/
+
+# Next.js
+admin/.next/
+admin/node_modules/
+admin/.env.local
+admin/.env
+pwa/node_modules/
+pwa/.next/
+pwa/.env.local
+pwa/.env
+
+# Logs
+*.log
